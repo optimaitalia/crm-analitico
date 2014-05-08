@@ -1,6 +1,6 @@
 load("BundleDett.Rdata")
 
-###la logica è creare un estrattore che parta
+###la logica ? creare un estrattore che parta
 #dalla pi_clientibundledett e dato un idCliente
 ## crei un oggetto lista chiamato PI (Prodotto Integrato)
 ## la lista ha come primo livello un summary globale del prodotto con CanoneMese idCliente 
@@ -141,45 +141,45 @@ PI_dataAttivazione = function(obj)  obj$dataAttivazione
 PI_dataDisattivazione = function(obj)  obj$dataDisattivazione
 PI_costoServizio = function(obj) obj$costoServizio
 PI_unita= function(obj) obj$unita
-PI_ADSL(cliente)
-PI_unita(cliente$ADSL)
+#PI_ADSL(cliente)
+#PI_unita(cliente$ADSL)
 
 ###
 
 
 
-PI_Perserv= function(obj,obj2) round((PI_costoServizio(obj)/(obj2$CanoneMese)),2) * 100
+#PI_Perserv= function(obj,obj2) round((PI_costoServizio(obj)/(obj2$CanoneMese)),2) * 100
 
-PI_Perserv(PI_Voce(cliente),cliente)
+#PI_Perserv(PI_Voce(cliente),cliente)
 
 
 
 # PI_costoServizio(PI_ADSL(cliente))
 # PI_Perserv(PI_ADSL(cliente))
 
-cliente=PI_constructor(idCliente="20063",BundleDett=BundleDett)
+#cliente=PI_constructor(idCliente="20063",BundleDett=BundleDett)
 
 #PI_Perserv(PI_Energia(cliente),cliente)
 #PI_Perserv(PI_Voce(cliente),cliente)
 ###################################################################################
 ##MetodoCostruttore Modifica
 ###################################################################################
-PI_utenza(cliente)
-PI_ModificaServizio=function(obj,serv=c("ADSL")){
-  
-  if(obj != "PI" || length(serv)==0){
-    
-    
-  }else{
-    
-    
-    
-    
-  }
-  
-  
-  
-  
-}
+# PI_utenza(cliente)
+# PI_ModificaServizio=function(obj,serv=c("ADSL")){
+#   
+#   if(obj != "PI" || length(serv)==0){
+#     
+#     
+#   }else{
+#     
+#     
+#     
+#     
+#   }
+#   
+#   
+#   
+#   
+# }
 
 

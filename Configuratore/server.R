@@ -1,7 +1,7 @@
 library(shiny)
-setwd("../Configuratore/")
+setwd("~/REPO/crm-analitico/Configuratore")
 source("ScriptClass.R")
-load("../Configuratore/BundleDett.Rdata")
+load("BundleDett.Rdata")
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
   
